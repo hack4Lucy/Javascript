@@ -1,0 +1,40 @@
+<script type="text/javascript">
+    // var lolz;
+    var box1;
+    var box2;
+
+    function onload() { 
+        // lolz = document.getElementById('lolz');
+        box1 = document.getElementById('first_num');
+        box2 = document.getElementById('second_num');
+    }
+
+    function answer(){
+
+    	// var sum = eval(box1.value + box2.value);
+        sum = parseInt(box1.value) + parseInt(box2.value);
+
+        // alert(lolz.value);
+        alert(box1.value + " + " + box2.value + " = " + sum);
+    }
+</script>
+
+<body onload="onload();">
+    <!-- <input type="text" name="enter" class="enter" value="" id="first_num"/>
+    <input type="button" value="click" onclick="kk();"/> -->
+
+    <label>First number: </label>
+    <input type="text" id="first_num" size="10" />
+    <br>
+    <br>
+
+    <label>Second number: </label>
+    <input type="text" id="second_num" size="10" />
+
+    <input type="button" value="calculate" id="result" onclick="answer()" />
+
+
+
+
+
+</body>
